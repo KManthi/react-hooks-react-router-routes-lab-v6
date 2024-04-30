@@ -12,13 +12,7 @@ function Home() {
     .catch(error => console.error('Error fetching movies:', error))
   }, [])
 
-  const movieList = movies.map(movie => {
-    <MovieCard 
-    key={movie.id}
-    title={movie.title}
-    id={movie.id}
-    />
-  })
+  const movieList = movies.map(movie => <MovieCard key={movie.id} title={movie.title} id={movie.id} />)
 
   return (
     <>

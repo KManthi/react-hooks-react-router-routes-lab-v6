@@ -12,13 +12,8 @@ function Directors() {
     .catch(error => console.error('Error fetching directors:', error))
   }, [])
 
-  const directorsList = directors.map(director => {
-    <Card 
-    key={director.id}
-    name={director.name}
-    movies={director.movies}
-    />
-  })
+  const directorsList = directors.map(director => <Card key={director.id} name={director.name} movies={director.movies} />
+  )
 
   return (
     <>

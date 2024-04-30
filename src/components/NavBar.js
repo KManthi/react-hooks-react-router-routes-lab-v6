@@ -9,6 +9,6 @@ function NavBar() {
       <NavLink to='/actors'>Actors</NavLink>    
     </nav>
     );
-};
+}
 
 export default NavBar;

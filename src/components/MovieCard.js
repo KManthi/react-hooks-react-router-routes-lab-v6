@@ -7,7 +7,7 @@ function MovieCard({title, id}) {
         <h2>{title}</h2>
         <Link to={`/movie/${id}`}>View Info</Link>
     </article>
-  );
-};
+  )
+}
 
 export default MovieCard;

@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
-import Actors from "./pages/Actors";
-import Directors from "./pages/Directors";
 import Movie from "./pages/Movie";
+import Directors from "./pages/Directors";
+import Actors from "./pages/Actors";
 import ErrorPage from "./pages/ErrorPage";
 
 const routes = [
@@ -11,19 +11,16 @@ const routes = [
     errorElement: <ErrorPage />
    },
    {
-    path: '/actors',
-    element: <Actors />,
-    errorElement: <ErrorPage />
+    path: '/movie/:id',
+    element: <Movie />
    },
    {
     path: '/directors',
-    element: <Directors />,
-    errorElement: <ErrorPage />
+    element: <Directors />
    },
    {
-    path: '/movie/:id',
-    element: <Movie />,
-    errorElement: <ErrorPage />
+    path: '/actors',
+    element: <Actors />
    }
   ];
 

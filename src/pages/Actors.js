@@ -11,15 +11,9 @@ function Actors() {
     .then(r => r.json())
     .then(data => setActors(data))
     .catch(error => console.error('Error fetching actors:', error))
-  }, {})
+  }, [])
 
-  const actorList = actors.map( actor => {
-    <Card
-    key={actor.id}
-    name={actor.name}
-    movies={actor.movies} 
-    />
-  })
+  const actorList = actors.map(actor => <Card key={actor.id} name={actor.name} movies={actor.movies} />)
 
   return (
     <>
